@@ -1,0 +1,19 @@
+{
+ "name": "extension-mappir",
+ "version": "0.0.1",
+ "manifest_version": 2,
+ "content_scripts": [
+    {
+      "matches": ["http://ttr.sct.gob.mx/mappir/*"],
+      "js": ["popup.js"]
+    }
+  ],
+   "permissions": [
+          "tabs"
+        ],
+ "browser_action": {
+ "default_icon": "3LAlogo.png",
+ "default_title": "Extension mappir",
+ "default_popup": "popup.html"
+ }
+}
